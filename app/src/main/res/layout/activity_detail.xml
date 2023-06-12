@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailActivity">
+    <EditText
+        android:id="@+id/edtNrp_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        android:hint="NRP"/>
+    <EditText
+        android:id="@+id/edtNama_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNrp_details"
+        android:layout_marginBottom="10dp"
+        android:hint="Nama"/>
+    <EditText
+        android:id="@+id/edtEmail_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNama_details"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/edtJurusan_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail_details"
+        android:layout_marginBottom="10dp"
+        android:hint="Jurusan"/>
+    <Button
+        android:id="@+id/btnEdit_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Data"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtJurusan_details"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
